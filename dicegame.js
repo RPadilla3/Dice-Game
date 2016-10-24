@@ -1,4 +1,3 @@
-
 (function diceGame() {
 
     // Use document.querySelector('...') to find HTML elements
@@ -8,8 +7,18 @@
 
     document.querySelector('button').addEventListener('click', function buttonClicked() {
 
-        var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
-        console.log(dieNumOne);
+      var dieOne = Math.floor(Math.random()* 6 + 1);
+      console.log(dieOne);
+      var dieTwo = Math.floor(Math.random()* 6 + 1);
+      console.log(dieTwo);
+      var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
+
+
+
+
+
+
+
 
     });
 
