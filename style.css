@@ -1,3 +1,16 @@
+body {
+  width: 50%;
+  margin: 25%; }
 
+aside {
+  padding: 50px; }
+  aside.left {
+    float: left;
+    border: 1px solid black; }
+  aside.right {
+    border: 1px solid black; }
+
+main {
+  border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */

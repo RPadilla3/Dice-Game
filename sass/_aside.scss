@@ -1,0 +1,16 @@
+
+aside {
+  padding: 50px;
+  
+
+  &.left {
+  float: left;
+  border: 1px solid black;
+
+  }
+  &.right {
+    border: 1px solid black;
+
+
+  }
+}
