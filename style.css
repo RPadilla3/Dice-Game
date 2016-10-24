@@ -2,15 +2,34 @@ body {
   width: 50%;
   margin: 25%; }
 
+h1 {
+  text-align: center; }
+
 aside {
-  padding: 50px; }
+  padding: 25px; }
   aside.left {
     float: left;
-    border: 1px solid black; }
+    border: 1px solid black;
+    margin-left: 10%;
+    background-color: #655755;
+    border-radius: 5%; }
   aside.right {
-    border: 1px solid black; }
+    margin-left: 80%;
+    clear: right;
+    border: 1px solid black;
+    padding-right: -30%;
+    background-color: #655755;
+    border-radius: 5%; }
 
 main {
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-color: #bdb8c2; }
+
+h2 {
+  text-align: center; }
+
+button {
+  border-radius: 5%;
+  margin-left: 43%; }
 
 /*# sourceMappingURL=style.css.map */

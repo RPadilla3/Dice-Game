@@ -10,13 +10,9 @@
 
     // var x = 13;
     //              |-----------------------------x---------------------------|
-    var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
+      var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
     // x=42;
     //
-
-
-
-
 
       var dieOne = Math.floor(Math.random()* 6 + 1);
       console.log(dieOne);
@@ -25,18 +21,18 @@
       var score = dieOne + dieTwo;
       console.log(score);
 
-
-
+      if ( score === 11 ) {
+      var no =  document.querySelector('.result').innerText += 'Try Again';
+      }
+      // for (var i = 0; )
+      else if (score === 7 ) {
+      var yes = document.querySelector('.result').innerText += 'You Win!';
+      };
 
       document.querySelector('.dice aside:first-child').innerText = dieOne;
       document.querySelector('.dice aside:last-child').innerText = dieTwo;
+      // document.querySelector('.result').innerText = no;
 
-      if ( score === 11 ){
-        alert('You Win!');
-      }
-      else if (score === 7 ) {
-        alert('You Win!');
-      };
 
     });
 
