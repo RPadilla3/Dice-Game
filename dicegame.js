@@ -8,9 +8,15 @@
 
     document.querySelector('button').addEventListener('click', function buttonClicked() {
 
-
-
+    // var x = 13;
+    //              |-----------------------------x---------------------------|
     var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
+    // x=42;
+    //
+
+
+
+
 
       var dieOne = Math.floor(Math.random()* 6 + 1);
       console.log(dieOne);
@@ -20,15 +26,19 @@
       console.log(score);
 
 
-      if (score === 11) {
-        alert("You Win");
+
+
+      document.querySelector('.dice aside:first-child').innerText = dieOne;
+      document.querySelector('.dice aside:last-child').innerText = dieTwo;
+
+      if ( score === 11 ){
+        alert('You Win!');
       }
-      else if (score === 7) {
-        alert("You Win!");
-      }
+      else if (score === 7 ) {
+        alert('You Win!');
+      };
+
     });
-
-
 
 
 })();
