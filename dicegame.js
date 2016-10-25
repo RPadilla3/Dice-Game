@@ -13,26 +13,29 @@
       var dieNumOne = document.querySelector('.dice aside:first-child').innerText;
     // x=42;
     //
-
+      var now = new Date();
       var dieOne = Math.floor(Math.random()* 6 + 1);
-      console.log(dieOne);
       var dieTwo = Math.floor(Math.random()* 6 + 1);
-      console.log(dieTwo);
       var score = dieOne + dieTwo;
-      console.log(score);
+
 
       if ( score === 11 ) {
-      var no =  document.querySelector('.result').innerText += 'Try Again';
+      document.querySelector('.result').innerText = 'You Win!';
       }
-      // for (var i = 0; )
       else if (score === 7 ) {
-      var yes = document.querySelector('.result').innerText += 'You Win!';
+      document.querySelector('.result').innerText = 'You Win!';
+    }
+
+      else if (score === 1,2,3,4,5,6,8,9,10,12) {
+        document.querySelector('.result').innerText = 'Try Again';
       };
 
       document.querySelector('.dice aside:first-child').innerText = dieOne;
       document.querySelector('.dice aside:last-child').innerText = dieTwo;
-      // document.querySelector('.result').innerText = no;
 
+      // DATE START
+      // document.querySelector('.game-start').innerText = 'Game Started' + now.getFullYear() +  (now.getMonth() + 1 ) +  ( now.getDate());
+      //
 
     });
 
